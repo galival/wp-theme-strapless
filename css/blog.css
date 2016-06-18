@@ -1,0 +1,284 @@
+/*
+ * color palette
+ * tangerine (body links hover): #f19f4d
+ * cerulean (nav links, footer background, pager links): #295d99
+ * warm gray (body text): #504744
+ * dark warm gray (blog title active li): #1c1817
+ * very light gray (backgrounds): #f7f7f7
+ * light gray (borders): #f2f2f2
+ 
+ * Globals
+ */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #504744;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 500;
+  color: #504744;
+}
+
+p{
+	padding: 0px;
+}
+
+a{
+	color:#504744;
+	border-bottom: dashed 1px #504744;
+	
+}
+
+a:active,
+a:hover{
+	color: #f19f4d;
+	text-decoration: none;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  /*background: #fff;*/
+  background: #fff none repeat scroll 0 0;
+  border-bottom: 2px solid #f2f2f2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+	
+}
+.blog-masthead .container{
+	margin-left: -20px;
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  color: #192129
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+
+
+.blog-nav li{
+	position: relative;
+	display: inline-block;
+	padding: 1.5em 2em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.blog-nav li a{
+	color: #295d99;
+	border-bottom: none;
+}
+
+.blog-nav li a:hover,
+.blog-nav li a:focus{
+	text-decoration: none;
+	color: #f19f4d;
+}
+
+.blog-nav{
+	text-align: right;
+	font-size: 1.15em;
+}
+
+.page_item{
+	background: none;
+}
+
+.page_item:hover,
+.page_item:focus{
+}
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding: 0 0 40px 0;
+}
+.blog-title {
+  margin-top: 15px;
+  margin-bottom: 20;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.blog-title a{
+	color: #f19f4d;
+	border-bottom: none;
+}
+.blog-title a:active,
+.blog-title a:hover{
+	color: #f19f4d;
+}
+.blog-description {
+  font-size: .5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 1.13em;
+  line-height: 1.7em;
+  font-weight: 300;
+  padding: 0 0 0 20px;
+  color: #504744;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+.sidebar-module a{
+	border-bottom: none;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: .9em;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.blog-post-title a{
+	color: #504744;
+	border-bottom: none;
+}
+.blog-post-title a:active,
+.blog-post-title a:hover{
+	text-decoration: none;
+	color: #1c1817;
+}
+.blog-post-meta {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  color: #504744;
+  font-size: .8em;
+}
+
+.blog-post-meta a{
+	border-bottom: none;
+}
+
+.blog-post-single{
+	font-size: 1.2em;
+	line-height: 1.7em;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.blog-post-meta-single{
+	font-size: .8em;
+	margin-bottom: 30px;
+}
+
+.blog-post-title-single{
+	font-size: 1.5em;
+	color: #f19f4d;
+	font-weight: 400;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #f7f7f7;
+  text-align: center;
+  background-color: #295d99;
+  border-top: 1px solid #f2f2f2;
+}
+.blog-footer a{
+	color: #f19f4d;
+	border-bottom: none;
+
+}
+.blog-footer a:active,
+.blog-footer a:hover{
+	text-decoration: none;
+	color: #f7f7f7;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Comments
+ */
+ .logged-in-as a{
+	 border-bottom: none;
+ }
+ #reply-title{
+	 color: #f19f4d;
+ }
